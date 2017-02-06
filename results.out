@@ -6,9 +6,9 @@ Target: 100 -> -117
 * Error            : 1.53%
 * Transition Cost  : 130
 * Nodes Evaluated  : 35
-* Branching Factor : 11.11
-* Elapsed Time     : 0.45155s
-* Memory Usage     : 19M
+* Branching Factor : 11.44
+* Elapsed Time     : 0.47207s
+* Memory Usage     : 20M
 
 * Method           : Depth First Search
 * Goal             : --127/127/127-127/127/127-127/109--
@@ -16,8 +16,8 @@ Target: 100 -> -117
 * Error            : 0.23%
 * Transition Cost  : 998
 * Nodes Evaluated  : 23
-* Branching Factor : 3.39
-* Elapsed Time     : 0.11212s
+* Branching Factor : 8.67
+* Elapsed Time     : 0.11062s
 * Memory Usage     : 3M
 
 * Method           : Uniform Cost Search
@@ -26,8 +26,8 @@ Target: 100 -> -117
 * Error            : 1.53%
 * Transition Cost  : 130
 * Nodes Evaluated  : 6565
-* Branching Factor : 7.75
-* Elapsed Time     : 0.79458s
+* Branching Factor : 8.38
+* Elapsed Time     : 0.76599s
 * Memory Usage     : 25M
 
 * Method           : A*
@@ -36,9 +36,9 @@ Target: 100 -> -117
 * Error            : 1.53%
 * Transition Cost  : 130
 * Nodes Evaluated  : 485
-* Branching Factor : 7.40
-* Elapsed Time     : 0.16395s
-* Memory Usage     : 4M
+* Branching Factor : 7.68
+* Elapsed Time     : 0.17235s
+* Memory Usage     : 5M
 
 Target: 100 -> 77
 
@@ -48,8 +48,8 @@ Target: 100 -> 77
 * Error            : 0.43%
 * Transition Cost  : 232
 * Nodes Evaluated  : 1574
-* Branching Factor : 8.41
-* Elapsed Time     : 0.00239s
+* Branching Factor : 8.42
+* Elapsed Time     : 0.00244s
 * Memory Usage     : 2M
 
 * Method           : Depth First Search
@@ -58,8 +58,8 @@ Target: 100 -> 77
 * Error            : 0.43%
 * Transition Cost  : 933
 * Nodes Evaluated  : 1135
-* Branching Factor : 1.06
-* Elapsed Time     : 0.00059s
+* Branching Factor : 12.35
+* Elapsed Time     : 0.00051s
 * Memory Usage     : 283K
 
 * Method           : Uniform Cost Search
@@ -68,8 +68,8 @@ Target: 100 -> 77
 * Error            : 2.34%
 * Transition Cost  : 229
 * Nodes Evaluated  : 800567
-* Branching Factor : 3.39
-* Elapsed Time     : 51.86040s
+* Branching Factor : 8.34
+* Elapsed Time     : 49.12866s
 * Memory Usage     : 691M
 
 * Method           : A*
@@ -78,8 +78,8 @@ Target: 100 -> 77
 * Error            : 2.34%
 * Transition Cost  : 229
 * Nodes Evaluated  : 93985
-* Branching Factor : 4.39
-* Elapsed Time     : 10.87483s
+* Branching Factor : 7.94
+* Elapsed Time     : 9.99514s
 * Memory Usage     : 172M
 
 Target: 100 -> 377
@@ -90,8 +90,8 @@ Target: 100 -> 377
 * Error            : 1.04%
 * Transition Cost  : 96
 * Nodes Evaluated  : 1302
-* Branching Factor : 8.06
-* Elapsed Time     : 0.00193s
+* Branching Factor : 8.07
+* Elapsed Time     : 0.00183s
 * Memory Usage     : 2M
 
 * Method           : Depth First Search
@@ -100,8 +100,8 @@ Target: 100 -> 377
 * Error            : 1.07%
 * Transition Cost  : 741
 * Nodes Evaluated  : 17523
-* Branching Factor : 1.00
-* Elapsed Time     : 0.00655s
+* Branching Factor : 8.57
+* Elapsed Time     : 0.00566s
 * Memory Usage     : 4M
 
 * Method           : Uniform Cost Search
@@ -110,8 +110,8 @@ Target: 100 -> 377
 * Error            : 1.04%
 * Transition Cost  : 96
 * Nodes Evaluated  : 563
-* Branching Factor : 8.36
-* Elapsed Time     : 0.02994s
+* Branching Factor : 8.38
+* Elapsed Time     : 0.02430s
 * Memory Usage     : 1M
 
 * Method           : A*
@@ -120,8 +120,8 @@ Target: 100 -> 377
 * Error            : 1.11%
 * Transition Cost  : 153
 * Nodes Evaluated  : 283
-* Branching Factor : 6.91
-* Elapsed Time     : 0.03644s
+* Branching Factor : 7.88
+* Elapsed Time     : 0.03398s
 * Memory Usage     : 838K
 
 Target: 100 -> -20
@@ -133,7 +133,7 @@ Target: 100 -> -20
 * Transition Cost  : 123
 * Nodes Evaluated  : 4673
 * Branching Factor : 8.95
-* Elapsed Time     : 0.00595s
+* Elapsed Time     : 0.00606s
 * Memory Usage     : 6M
 
 * Method           : Depth First Search
@@ -142,8 +142,8 @@ Target: 100 -> -20
 * Error            : 1.13%
 * Transition Cost  : 767
 * Nodes Evaluated  : 5606
-* Branching Factor : 1.01
-* Elapsed Time     : 0.00196s
+* Branching Factor : 8.11
+* Elapsed Time     : 0.00176s
 * Memory Usage     : 1M
 
 * Method           : Uniform Cost Search
@@ -152,8 +152,8 @@ Target: 100 -> -20
 * Error            : 2.40%
 * Transition Cost  : 79
 * Nodes Evaluated  : 189
-* Branching Factor : 8.21
-* Elapsed Time     : 0.00755s
+* Branching Factor : 8.26
+* Elapsed Time     : 0.00680s
 * Memory Usage     : 410K
 
 * Method           : A*
@@ -162,8 +162,8 @@ Target: 100 -> -20
 * Error            : 1.13%
 * Transition Cost  : 123
 * Nodes Evaluated  : 37
-* Branching Factor : 7.78
-* Elapsed Time     : 0.00453s
+* Branching Factor : 8.00
+* Elapsed Time     : 0.00410s
 * Memory Usage     : 134K
 
 Target: 100 -> -2345
@@ -175,7 +175,7 @@ Target: 100 -> -2345
 * Transition Cost  : 204
 * Nodes Evaluated  : 2840279
 * Branching Factor : 8.48
-* Elapsed Time     : 18.08432s
+* Elapsed Time     : 15.57296s
 * Memory Usage     : 3631M
 
 * Method           : Depth First Search
@@ -184,8 +184,8 @@ Target: 100 -> -2345
 * Error            : 2.16%
 * Transition Cost  : 444
 * Nodes Evaluated  : 2687189
-* Branching Factor : 1.00
-* Elapsed Time     : 0.99821s
+* Branching Factor : 8.10
+* Elapsed Time     : 1.00938s
 * Memory Usage     : 632M
 
 * Method           : Uniform Cost Search
@@ -194,8 +194,8 @@ Target: 100 -> -2345
 * Error            : 0.08%
 * Transition Cost  : 180
 * Nodes Evaluated  : 131698
-* Branching Factor : 4.64
-* Elapsed Time     : 8.19800s
+* Branching Factor : 8.42
+* Elapsed Time     : 7.95151s
 * Memory Usage     : 153M
 
 * Method           : A*
@@ -204,8 +204,8 @@ Target: 100 -> -2345
 * Error            : 0.01%
 * Transition Cost  : 215
 * Nodes Evaluated  : 84
-* Branching Factor : 3.51
-* Elapsed Time     : 0.00564s
+* Branching Factor : 8.43
+* Elapsed Time     : 0.00550s
 * Memory Usage     : 143K
 
 Target: 100 -> 2
@@ -217,7 +217,7 @@ Target: 100 -> 2
 * Transition Cost  : 182
 * Nodes Evaluated  : 53345
 * Branching Factor : 8.26
-* Elapsed Time     : 0.30895s
+* Elapsed Time     : 0.30074s
 * Memory Usage     : 63M
 
 * Method           : Depth First Search
@@ -226,8 +226,8 @@ Target: 100 -> 2
 * Error            : 1.51%
 * Transition Cost  : 583
 * Nodes Evaluated  : 321198
-* Branching Factor : 1.00
-* Elapsed Time     : 0.12795s
+* Branching Factor : 8.26
+* Elapsed Time     : 0.12123s
 * Memory Usage     : 75M
 
 * Method           : Uniform Cost Search
@@ -236,8 +236,8 @@ Target: 100 -> 2
 * Error            : 1.92%
 * Transition Cost  : 144
 * Nodes Evaluated  : 17995
-* Branching Factor : 6.31
-* Elapsed Time     : 0.97271s
+* Branching Factor : 8.42
+* Elapsed Time     : 0.95963s
 * Memory Usage     : 29M
 
 * Method           : A*
@@ -246,6 +246,6 @@ Target: 100 -> 2
 * Error            : 1.51%
 * Transition Cost  : 202
 * Nodes Evaluated  : 8
-* Branching Factor : 8.25
-* Elapsed Time     : 0.00096s
+* Branching Factor : 9.43
+* Elapsed Time     : 0.00095s
 * Memory Usage     : 33K

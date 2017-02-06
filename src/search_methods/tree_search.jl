@@ -24,6 +24,7 @@ function tree_search{N<:TreeNode}(
 
     children = make_children(node, params)
     result.branches += length(children)
+    result.parent_nodes += 1
 
     for child = children
       add_node!(child)

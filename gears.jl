@@ -34,7 +34,7 @@ for ω_out = [ -117.0, 77.0, 377.0, -20.0, -2345.0, 2.0 ]
       println("* Goal             : not found")
     end
     @printf "* Nodes Evaluated  : %d\n" result.nodes_visited
-    @printf "* Branching Factor : %.2f\n" result.branches / result.nodes_visited
+    @printf "* Branching Factor : %.2f\n" result.branches / result.parent_nodes
     @printf "* Elapsed Time     : %.5fs\n" seconds
     @printf "* Memory Usage     : %.0f%s\n\n" bytes/(bytes >= 1e6 ? 1e6 : 1e3) bytes >= 1e6 ? 'M' : 'K'
   end

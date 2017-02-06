@@ -18,10 +18,11 @@ module TreeSearch
   type TreeSearchResult
     goal::Union{Void,TreeNode}
     nodes_visited::UInt64
+    parent_nodes::UInt64
     branches::UInt64
   end
 
-  TreeSearchResult() = TreeSearchResult(nothing, 0, 0)
+  TreeSearchResult() = TreeSearchResult(nothing, 0, 0, 0)
 
   type NotImplemented <: Exception
     name::String
