@@ -5,6 +5,7 @@ gears = [ 11, 23, 31, 47, 59, 71, 83, 97, 109, 127 ]
 ω_out = 0.0
 ϵ_threshold = 0.025
 mesh_distance = 30
+max_idlers = 3
 max_depth = 10
 
 methods = [
@@ -17,7 +18,7 @@ methods = [
 let io = STDOUT
 # open("results.out", "w") do io
   for ω_out = [ -117.0, 77.0, 377.0, -20.0, -2345.0, 2.0 ]
-    params = GearSearchParams(gears, ω_in, ω_out, ϵ_threshold, mesh_distance)
+    params = GearSearchParams(gears, ω_in, ω_out, ϵ_threshold, mesh_distance, max_idlers)
     options = [ :max_depth => max_depth ]
 
     @printf io "Target: %.0f -> %.0f\n\n" ω_in ω_out

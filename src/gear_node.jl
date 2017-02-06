@@ -85,7 +85,7 @@ function TreeSearch.make_children(node::GearNode, params::GearSearchParams)
 
     # Treat the engaged gear as an idler if its parent is on a shaft
     # and add all possible engaged gears
-    if node.parent != nothing && node.parent.connection == on_shaft
+    if node.parent != nothing && idler_depth(node) < params.max_idlers
       engaged_nodes = map(mates_for(node.teeth, params)) do teeth
         GearNode(node, engaged, teeth)
       end
@@ -99,6 +99,12 @@ function TreeSearch.make_children(node::GearNode, params::GearSearchParams)
       GearNode(node, engaged, teeth)
     end
   end
+end
+
+# Calculate the number of consecutive idlers for the current engaged gear,
+# used by make_children() to determine whether or not to add another idler
+function idler_depth(node::GearNode)
+  node.parent.connection == on_shaft ? 0 : idler_depth(node.parent) + 1
 end
 
 ###

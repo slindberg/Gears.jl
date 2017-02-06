@@ -4,6 +4,7 @@ immutable GearSearchParams <: TreeSearch.TreeSearchParams
   ω_out::AbstractFloat
   ϵ_threshold::AbstractFloat
   mesh_distance::Int
+  max_idlers::Int
 end
 
 # Calculate the error in the given gear ratio
