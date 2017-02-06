@@ -45,13 +45,11 @@ function to_string(node::GearNode, is_last = true)
   end
 
   if node.teeth > 0
-    str *= if node.connection == on_shaft
-      "-"
-    elseif node.connection == engaged
-      "/"
+    if node.connection == on_shaft
+      str *= "-"
     end
 
-    str *= string(node.teeth)
+    str *= "($(node.teeth))"
   end
 
   if is_last
