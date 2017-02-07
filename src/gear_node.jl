@@ -125,23 +125,25 @@ end
 # Then the heuristic becomes the absolute value of the difference between the
 # target and current gear ratios:
 #
-#                     │    ⌈ ω_out ⌉      ⌈ T1     T3 ⌉ │
-#              h(n) = │ ln │-------│ - ln │---- * ----│ │
-#                     │    ⌊ ω_in  ⌋      ⌊ T2     T4 ⌋ │
+#              h(n) = │ ln (r_target / r_current) │
 #
+# Where the target ratio is the ideal ratio adjusted for the error threshold.
 # Because the heuristic (or e^h(n)) is the distance to the target ratio, which
 # can only be achieved by adding an exactly perfect set of gears, it so will
 # always underestimate the actual distance to the goal and is therefore
 # admissible. Additionally, since it ignores the alternating of directions for
 # each new gear pair, an extra idler maybe necessary to achieve the target,
 # further underestimating the distance. However, because any given ratio change
-# can overshoot the goal by more then its current distance to the goal, the
+# can overshoot the goal by more than its current distance to the goal, the
 # estimate is not monotonically decreasing (consistent) and a goal's optimality
 # cannot be guaranteed.
 function heuristic(node::GearNode, params::GearSearchParams)::AbstractFloat
+  r_ideal = params.ω_out / params.ω_in
+  r_target = r_ideal - params.ϵ_threshold * (r_ideal - 1)
+
   # Note that both the target ratio and the current ratio can be negative, which
   # is ignored for the sake of the heuristic
-  abs(log(abs((params.ω_out / params.ω_in) / node.gear_ratio)))
+  abs(log(abs(r_target / node.gear_ratio)))
 end
 
 # The transition cost is expressed in units of gear teeth, but the heuristic
